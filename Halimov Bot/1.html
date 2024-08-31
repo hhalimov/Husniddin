@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Ilova</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .btn { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Telegram Mini Ilovaga Xush Kelibsiz!</h1>
+    <p>Bu oddiy mini ilova, bu yerda sizning funksiyalar bo'ladi.</p>
+    <button class="btn" onclick="telegram.sendData('Hello from Mini App!')">Ma'lumot yuborish</button>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        let telegram = window.Telegram.WebApp;
+        telegram.ready();
+    </script>
+</body>
+</html>
